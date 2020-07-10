@@ -70,5 +70,12 @@ function createCard(articles) {
     name.textContent = articles.authorName;
     url.setAttribute("src", articles.authorPhoto);
 
+    card.addEventListener('click', function () {
+        console.log(headline.textContent)
+    })
+
     return card;
 }
+
+
+
